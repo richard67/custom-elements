@@ -21,7 +21,7 @@
   ],
   "author": "Dimitrios Grammatikogiannis",
   "devDependencies": {
-    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
     "@polymer/test-fixture": "^4.0.2",
     "@webcomponents/custom-elements": "latest",
     "@webcomponents/webcomponentsjs": "^2.1.3",
