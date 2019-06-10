@@ -50,6 +50,15 @@
   .alert-link {
     color: darken($color, 10%);
   }
+
+  &::before{
+    content: "";
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    background-size: 100%;
+	margin-right: .5em;
+  }
 }
 
 //
@@ -134,6 +143,12 @@ joomla-alert {
 @each $color, $value in $alert-colors {
   joomla-alert[type="#{$color}"] {
     @include alert-variant(theme-color-level($color, -10), theme-color-level($color, -9), theme-color-level($color, 6));
+  }
+}
+
+@each $color, $value in $alert-icons {
+  joomla-alert[type="#{$color}"] {
+    background-image: $color;
   }
 }
 
